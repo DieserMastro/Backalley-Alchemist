@@ -12,7 +12,9 @@ public class Game_Controller : MonoBehaviour
         BAR,
         LAPTOP,
         LAB,
-
+        ON_MISSION,
+        COMBAT,
+        PUZZLE
     }
     [SerializeField]
     private List<Scene> connectedScenes;
