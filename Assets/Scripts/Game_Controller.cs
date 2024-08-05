@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManager;
+using UnityEngine.SceneManagement;
 
 public class Game_Controller : MonoBehaviour
 {
@@ -15,7 +15,7 @@ public class Game_Controller : MonoBehaviour
 
     }
     [SerializeField]
-    private List<> connectedScenes;
+    private List<Scene> connectedScenes;
 
 
     void Start()
