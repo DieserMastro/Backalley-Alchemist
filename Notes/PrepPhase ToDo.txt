@@ -1,0 +1,17 @@
+Drag & Drop Alchemy:
+
+- 2 item slots, 1 for equipment, 1 for enchantment
+- when both slots filled with non nulls, enable Enchant button by pressing in the middle of circle
+- equipment 1 gains bonus stats based on enchantment.
+
+Needs:
+
+2 Slots------------- Done
+Item Specifier ------- Done
+Slot Hightlights onTrigger ------- Done
+EnchantmentButton ------ Done
+AlchemyCircle gets both gameobjects ------ Done
+
+How-To: combine the two gameobjects.....
+
+Take Damage Stat from Equipment, Take Element and Damage Stat from Enchantment, spawn prefab with those stats. (Scripted hardcoded prefab, not dynamically generated)

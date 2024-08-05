@@ -1,0 +1,24 @@
+Events:
+
+Talking Phase:
+
+- Client enters
+- Client & Player Dialogue
+- New Case acquired 
+
+Analysing Phase:
+
+- Click-On: Encyclopedia, Bestiary, Bestiary Entries
+- Choose Cause (Drag & Drop)
+
+Preparation Phase:
+
+- //Crafting: DQ9 Style material mashup
+- Mixing: Dragging Materials into pot, mixing with mouse
+- Enchanting: Choosing weapon, choosing crystal for enchantment (Drag and Drop, 2 Slots)
+- Equipment: Choosing from a variety of tools and weapons (guns... etc)
+
+Confrontation Phase: 
+
+- Instantiate Turn-Based Combat: Choose Move from Turn-Based UI (DQ/FF style)
+- Puzzle Solving Minigame: Clicker-Adventure Style
