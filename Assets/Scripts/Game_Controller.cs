@@ -44,4 +44,5 @@ public class Game_Controller : MonoBehaviour
             SceneManager.LoadSceneAsync(scene.buildIndex);
         }
     }
+
 }
