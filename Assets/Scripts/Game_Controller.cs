@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Game_Controller : MonoBehaviour
 {
+    public int currentGameState;
     public enum gameState
     {
         MAIN_MENU,
@@ -18,12 +19,29 @@ public class Game_Controller : MonoBehaviour
     }
     [SerializeField]
     private List<Scene> connectedScenes;
-
-
+    private Scene currentScene;
+        
     void Start()
     {
-        
+        currentScene = SceneManager.GetActiveScene();
+        currentGameState = currentScene.buildIndex;
     }
 
     
+
+    public void newScene(int sceneIndex)
+    {
+        SceneManager.LoadScene(sceneIndex, LoadSceneMode.Single);
+    }
+    public void moveScene(int sceneIndex)
+    {
+        SceneManager.SetActiveScene(connectedScenes[sceneIndex]);
+    }
+    public void preloadHubArea()
+    {
+        foreach (Scene scene in connectedScenes)
+        {
+            SceneManager.LoadSceneAsync(scene.buildIndex);
+        }
+    }
 }
