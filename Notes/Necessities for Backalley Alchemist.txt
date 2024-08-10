@@ -1,0 +1,71 @@
+Necessities for Backalley Alchemist Code Structure:
+
+Different Characters and character controllers:
+	
+	- Player:	(MUST HAVE)
+	
+		- Player Controller (WASD movement), Hitbox and Raycast for interactions
+		- Player Dataset: Stats (HP, ATK, DEF, DEF), Inventory, Equipment, EXP, Skills, Stamina/Mana/Soul-Energy
+		- Player Currencies (Money, Skillpoints)
+
+	- Familiar:	(NICE TO HAVE)
+
+		- Scripted Movement & follow player, Hitbox and Raycast for interactions
+		- Player Dataset: Stats (HP, ATK, DEF, DEF), Inventory, Equipment, EXP, Skills, Stamina/Mana/Soul-Energy
+		- Dialogue Trees/Lines
+		- Dialogue Chances/Rates/Events
+
+	- Named NPCs:	(VERY GOOD TO HAVE)
+
+		- Scripted movement, Hitbox and Raycast for interaction
+		- Stats (HP, ATK, DEF, DEF), Inventory, Equipment, EXP, Skills, Stamina/Mana/Soul-Energy
+		- Dialogue Trees/Lines
+		- Relationship/Friendship Level/Progress
+		- Special Quests status
+		- Spawnrate/chance/conditions
+
+	- Random NPCs: (MUST HAVE)
+		
+		- Name
+		- Scripted movement, Hitbox and Raycast for interaction
+		- Dialogue Trees/Lines
+		- MAYBE random sprite generator	(NICE TO HAVE)
+		- Quest
+
+	- Enemies: 	(MUST HAVE)
+		
+		- Name
+		- Race/Type/Ethnicity/Level
+		- Scripted movement, Hitbox and Raycast for interaction
+		- Dialogue Trees/Lines
+		- Stats (HP, ATK, DEF, DEF), Inventory, Equipment, Skills, Stamina/Mana/Soul-Energy
+		- Lootdrop (MAYBE?)
+		- Strengths/Weakness
+
+Core Gameplay Systems:
+
+	Player --- NPC Interactions: 	(MUST HAVE)
+
+		- List of Participants
+		- Dialogue Trigger , dialogue box, dialogue Manager
+		- Item Exchange 
+		- Result of Interaction (NPC leaves, NPC stays, Event Trigger?)
+
+	Case Engage-Mode:		(MUST HAVE)	
+		
+		- Scene Switcher (Bar, Library, Laboratory)
+		- States: Cause Determined (True or False), Determined Cause (String enemyName)
+		- Library: 
+			- Alphabetically sorted books (Bestiary, Alchemy Handbook, Magic and Sorcery Handbook, Artificer Handbook, Potion Handbook):
+				- Book.Object need a table of contents page and a Hashmap<string name, Page page> bookContent
+					- Page.Object need an interactable Title and Content + dynamically allocated page number.
+					- Next and Previous page Buttons.
+			- Interactable Pages (Hyperlink content table, bestiary names are clickable to set as Determined Cause, craftables are clickable to display recipe when in Lab)
+
+		- Laboratory:
+
+			- An Alchemy Circle:
+				- Two Object Slots: One for Equipment or Consumable, one for Enchantment.
+					- Object Combiner: Data is taken from both object slots, merging them to create a new Object and added to the player Inventory Or Stash.
+				
+			
