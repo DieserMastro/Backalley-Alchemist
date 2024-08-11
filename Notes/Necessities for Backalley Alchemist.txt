@@ -8,7 +8,7 @@ Different Characters and character controllers:
 		- Player Dataset: Stats (HP, ATK, DEF, DEF), Inventory, Equipment, EXP, Skills, Stamina/Mana/Soul-Energy
 		- Player Currencies (Money, Skillpoints)
 
-	- Familiar:	(NICE TO HAVE)
+	- Familiar:	(VERY NICE TO HAVE)
 
 		- Scripted Movement & follow player, Hitbox and Raycast for interactions
 		- Player Dataset: Stats (HP, ATK, DEF, DEF), Inventory, Equipment, EXP, Skills, Stamina/Mana/Soul-Energy
@@ -64,8 +64,10 @@ Core Gameplay Systems:
 
 		- Laboratory:
 
-			- An Alchemy Circle:
+			- Alchemy Circle:
 				- Two Object Slots: One for Equipment or Consumable, one for Enchantment.
 					- Object Combiner: Data is taken from both object slots, merging them to create a new Object and added to the player Inventory Or Stash.
 				
-			
+			- Cauldron:
+				- One to Three Object slots.
+					- Mixing effects with different ingredients, strengthening same effect with same ingredients
