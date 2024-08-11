@@ -5,25 +5,26 @@ using UnityEngine.SceneManagement;
 
 public class Game_Controller : MonoBehaviour
 {
-    public int currentGameState;
+    /*public int currentGameState;
     public enum gameState
     {
         MAIN_MENU,
         PAUSE,
         BAR,
-        LAPTOP,
         LAB,
         ON_MISSION,
         COMBAT,
         PUZZLE
-    }
-    
+    }*/
+    [SerializeField]
+    private GameObject dialogueTrigger;
+    private Vector2 dialogueTriggerPos;
     private Scene currentScene;
         
     void Start()
     {
         currentScene = SceneManager.GetActiveScene();
-        currentGameState = currentScene.buildIndex;
+        dialogueTriggerPos = dialogueTrigger.transform.position;
     }
 
     
@@ -33,5 +34,8 @@ public class Game_Controller : MonoBehaviour
         SceneManager.LoadScene(sceneIndex, LoadSceneMode.Single);
     }
 
-    
+    public Vector2 getDialogueTriggerPos()
+    {
+        return dialogueTriggerPos;
+    }
 }
