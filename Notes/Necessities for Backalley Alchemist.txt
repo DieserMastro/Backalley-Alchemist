@@ -72,8 +72,20 @@ Core Gameplay Systems:
 				- One to Three Object slots.
 					- Mixing effects with different ingredients, strengthening same effect with same ingredients
 
-	Combat:
+	Combat:		(MUST HAVE)
+
 		Combat Manager:
 			- Two teams, Movespeed OR team based Turn Stack
 			- Damage Manager/Calculator
-			- 
+			- End-Combat-Result (EXP gained, loot gained, ...etc)
+
+	Puzzles:	(VERY GOOD TO HAVE)
+		Puzzle Manager:
+			THIS WILL BE ON DEMAND... EACH PUZZLE WILL BE DIFFERENT
+
+	Day Cycle:	(MUST HAVE) (Pokemon Mystery Dungeon Style)
+
+		Overarching Game_Manager:
+			- Keeps track of Days played 
+			- Changes scenes
+			- Manages/Stores Progress of player
