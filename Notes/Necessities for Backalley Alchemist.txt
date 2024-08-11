@@ -72,24 +72,26 @@ Core Gameplay Systems:
 				- One to Three Object slots.
 					- Mixing effects with different ingredients, strengthening same effect with same ingredients
 
-	Combat:
+	Combat:				(MUST HAVE)
 		Combat Manager:
 			- Two teams, Movespeed OR team based Turn Stack
 			- Damage Manager/Calculator
 			- Turn Manager
-	
-	Items:
+		
+	Items:				(MUST HAVE)
 		Item Types (Equipment, Enchantment, Ingredient, Consumable, 
 		Item Stats
 		Item Rarities
 		Item ID
 		Item HashMap
 
-	Quests:
+	Quests:				(MUST HAVE)
 		Quest Manager: 
 			- Quest Type: Extermination, Extraction, Exorcism, Crafting Order
 			- Quest Giver (Random/Minor/Major NPC)
 			- Quest Catalogue (HashMap)
 			- Quest Progression Tracker
+			- Main Quest, Side Quest, Random Quest (Pokémon MD Job style)
 			- Questline Catalogue
 			- Quest Rewards (Item, Currency, EXP, Relationship points)
+			- Quest Difficulty
