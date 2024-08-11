@@ -17,8 +17,7 @@ public class Game_Controller : MonoBehaviour
         COMBAT,
         PUZZLE
     }
-    [SerializeField]
-    private List<Scene> connectedScenes;
+    
     private Scene currentScene;
         
     void Start()
@@ -33,16 +32,6 @@ public class Game_Controller : MonoBehaviour
     {
         SceneManager.LoadScene(sceneIndex, LoadSceneMode.Single);
     }
-    public void moveScene(int sceneIndex)
-    {
-        SceneManager.SetActiveScene(connectedScenes[sceneIndex]);
-    }
-    public void preloadHubArea()
-    {
-        foreach (Scene scene in connectedScenes)
-        {
-            SceneManager.LoadSceneAsync(scene.buildIndex);
-        }
-    }
 
+    
 }
