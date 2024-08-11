@@ -71,3 +71,9 @@ Core Gameplay Systems:
 			- Cauldron:
 				- One to Three Object slots.
 					- Mixing effects with different ingredients, strengthening same effect with same ingredients
+
+	Combat:
+		Combat Manager:
+			- Two teams, Movespeed OR team based Turn Stack
+			- Damage Manager/Calculator
+			- 
