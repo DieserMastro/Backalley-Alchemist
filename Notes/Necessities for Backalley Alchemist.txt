@@ -76,4 +76,20 @@ Core Gameplay Systems:
 		Combat Manager:
 			- Two teams, Movespeed OR team based Turn Stack
 			- Damage Manager/Calculator
-			- 
+			- Turn Manager
+	
+	Items:
+		Item Types (Equipment, Enchantment, Ingredient, Consumable, 
+		Item Stats
+		Item Rarities
+		Item ID
+		Item HashMap
+
+	Quests:
+		Quest Manager: 
+			- Quest Type: Extermination, Extraction, Exorcism, Crafting Order
+			- Quest Giver (Random/Minor/Major NPC)
+			- Quest Catalogue (HashMap)
+			- Quest Progression Tracker
+			- Questline Catalogue
+			- Quest Rewards (Item, Currency, EXP, Relationship points)
