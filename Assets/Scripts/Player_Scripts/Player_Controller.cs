@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class Player_Controller : MonoBehaviour
 {
+    //System Data
     private Rigidbody2D rb;
     private Vector2 pos;
 
+
+    //Gameplay Data
     [SerializeField]
     protected float moveSpeed;
-    
+    private Vector2 moveVec = new Vector2(0,0);
 
     void Start()
     {
@@ -20,24 +23,41 @@ public class Player_Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Movement... There has to be a better/cleaner way...
         if (Input.GetKey(KeyCode.W))
         {
-            rb.transform.position = new Vector3(pos.x, pos.y + moveSpeed * Time.deltaTime);
+            moveVec.y = 1f;
+        }
+        if (Input.GetKeyUp(KeyCode.W))
+        {
+            moveVec.y = 0f;
         }
         if (Input.GetKey(KeyCode.A))
         {
-            rb.transform.position = new Vector3(pos.x - moveSpeed * Time.deltaTime, pos.y);
+            moveVec.x = -1f;
+        }
+        if (Input.GetKeyUp(KeyCode.A))
+        {
+            moveVec.x = 0f;
         }
         if (Input.GetKey(KeyCode.S))
         {
-            rb.transform.position = new Vector3(pos.x, pos.y - moveSpeed * Time.deltaTime);
+            moveVec.y = -1f;           
+        }
+        if (Input.GetKeyUp(KeyCode.S))
+        {
+            moveVec.y = 0f;
         }
         if (Input.GetKey(KeyCode.D))
         {
-            rb.transform.position = new Vector3(pos.x + moveSpeed * Time.deltaTime, pos.y);
+            moveVec.x = 1f;
         }
-
+        if (Input.GetKeyUp(KeyCode.D))
+        {
+            moveVec.x = 0f;
+        }
+        rb.transform.position = pos + (moveVec * moveSpeed * Time.deltaTime);       
         pos = rb.transform.position;
+        
     }
-
 }
