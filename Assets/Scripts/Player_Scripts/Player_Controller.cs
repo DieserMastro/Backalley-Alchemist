@@ -23,6 +23,13 @@ public class Player_Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        CheckMovement();
+        
+        pos = rb.transform.position;
+
+    }
+    void CheckMovement()
+    {
         //Movement... There has to be a better/cleaner way...
         if (Input.GetKey(KeyCode.W))
         {
@@ -42,7 +49,7 @@ public class Player_Controller : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.S))
         {
-            moveVec.y = -1f;           
+            moveVec.y = -1f;
         }
         if (Input.GetKeyUp(KeyCode.S))
         {
@@ -56,8 +63,7 @@ public class Player_Controller : MonoBehaviour
         {
             moveVec.x = 0f;
         }
-        rb.transform.position = pos + (moveVec * moveSpeed * Time.deltaTime);       
-        pos = rb.transform.position;
-        
+        rb.transform.position = pos + (moveVec * moveSpeed * Time.deltaTime);
     }
 }
+
