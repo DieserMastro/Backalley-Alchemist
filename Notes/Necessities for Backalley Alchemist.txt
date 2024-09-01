@@ -43,6 +43,26 @@ Different Characters and character controllers:
 		- Strengths/Weakness
 
 Core Gameplay Systems:
+	
+	ESSENTIAL SYSTEM:	GAME MANAGER
+
+		- DAY CYCLE SYSTEM
+		- EVENT MANAGER SYSTEM
+			- Define different types of events
+				- NPC-Interaction Event
+				- Case Accepted Event
+				
+			- 
+			-
+			-
+
+		- PROGRESS TRACKING SYSTEM
+		- SAVE GAME DATA
+		- CASE MANAGER SYSTEM
+		- DIALOGUE MANAGER
+		
+
+	
 
 	Player --- NPC Interactions: 	(MUST HAVE)
 
