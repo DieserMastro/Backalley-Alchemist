@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Player_Controller : MonoBehaviour
@@ -7,7 +8,8 @@ public class Player_Controller : MonoBehaviour
     //System Data
     private Rigidbody2D rb;
     private Vector2 pos;
-
+    //private RaycastHit2D interactRange;
+    
 
     //Gameplay Data
     [SerializeField]
