@@ -49,9 +49,9 @@ Core Gameplay Systems:
 		- DAY CYCLE SYSTEM
 		- EVENT MANAGER SYSTEM
 			- Define different types of events
-				- NPC-Interaction Event
-				- Case Accepted Event
-				
+				- NPC-Related Events
+				- Case Related Events
+				- 
 			- 
 			-
 			-
