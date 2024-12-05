@@ -36,10 +36,7 @@ public class NPC_Controller : MonoBehaviour
     
     void Update()
     {
-        if (readyToWalk)
-        {
-            rb.transform.position = ;
-        }
+       
     }
     private void StartWaiting(float waitTime, bool boolToSwitch)
     {
