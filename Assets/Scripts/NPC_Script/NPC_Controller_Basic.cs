@@ -36,7 +36,7 @@ public class NPC_Controller_Basic : MonoBehaviour
         if( game_Controller != null) 
         {   
             game_Controller.TestReference();
-            AssignDTriggerPos();
+            AssignDialogueTriggerPos();
             
         }
         if (!waitedAfterStart)
@@ -95,9 +95,9 @@ public class NPC_Controller_Basic : MonoBehaviour
             game_Controller.TriggerDialogue();
         }
     }
-    private void AssignDTriggerPos()
+    private void AssignDialogueTriggerPos()
     {
-        dTriggerPos = game_Controller.GetDTriggerPos();
+        dTriggerPos = game_Controller.GetDialogueTriggerPos();
     }
 
     private IEnumerator waitForSeconds(float seconds, bool boolToSwitch)

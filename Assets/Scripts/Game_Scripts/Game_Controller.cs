@@ -48,7 +48,7 @@ public class Game_Controller : MonoBehaviour
     {
         SceneManager.LoadScene(sceneIndex, LoadSceneMode.Single);
     }
-    public Vector2 GetDTriggerPos()
+    public Vector2 GetDialogueTriggerPos()
     {
         getCounter++;
         Debug.Log(dialogueTriggerPos.ToString() + "here! at: " + getCounter);
