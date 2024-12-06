@@ -35,7 +35,7 @@ public class Player_Controller : MonoBehaviour
 
     private void movementInputHandler()
     {
-        // Capture movement inputs
+        
         float moveX = 0;
         float moveY = 0;
 
@@ -64,7 +64,6 @@ public class Player_Controller : MonoBehaviour
     {
         if (rb != null)
         {
-            // Move using Rigidbody velocity for smooth and consistent movement
             rb.velocity = movementInput * moveSpeed;
         }
         else
