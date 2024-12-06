@@ -43,6 +43,26 @@ Different Characters and character controllers:
 		- Strengths/Weakness
 
 Core Gameplay Systems:
+	
+	ESSENTIAL SYSTEM:	GAME MANAGER
+
+		- DAY CYCLE SYSTEM
+		- EVENT MANAGER SYSTEM
+			- Define different types of events
+				- NPC-Related Events
+				- Case Related Events
+				- 
+			- 
+			-
+			-
+
+		- PROGRESS TRACKING SYSTEM
+		- SAVE GAME DATA
+		- CASE MANAGER SYSTEM
+		- DIALOGUE MANAGER
+		
+
+	
 
 	Player --- NPC Interactions: 	(MUST HAVE)
 
@@ -60,7 +80,7 @@ Core Gameplay Systems:
 				- Book.Object need a table of contents page and a Hashmap<string name, Page page> bookContent
 					- Page.Object need an interactable Title and Content + dynamically allocated page number.
 					- Next and Previous page Buttons.
-			- Interactable Pages (Hyperlink content table, bestiary names are clickable to set as Determined Cause, craftables are clickable to display recipe when in Lab)
+			- Interactable Pages (Hyperlink content table, bestiary names are clickable to set as Determined Cause, craftables are clickable to display recipe when in Lab) (QOL VERY NICE TO HAVE)
 
 		- Laboratory:
 
@@ -72,20 +92,26 @@ Core Gameplay Systems:
 				- One to Three Object slots.
 					- Mixing effects with different ingredients, strengthening same effect with same ingredients
 
-	Combat:		(MUST HAVE)
-
+	Combat:				(MUST HAVE)
 		Combat Manager:
 			- Two teams, Movespeed OR team based Turn Stack
 			- Damage Manager/Calculator
-			- End-Combat-Result (EXP gained, loot gained, ...etc)
+			- Turn Manager
+		
+	Items:				(MUST HAVE)
+		Item Types (Equipment, Enchantment, Ingredient, Consumable, 
+		Item Stats
+		Item Rarities
+		Item ID
+		Item HashMap
 
-	Puzzles:	(VERY GOOD TO HAVE)
-		Puzzle Manager:
-			THIS WILL BE ON DEMAND... EACH PUZZLE WILL BE DIFFERENT
-
-	Day Cycle:	(MUST HAVE) (Pokemon Mystery Dungeon Style)
-
-		Overarching Game_Manager:
-			- Keeps track of Days played 
-			- Changes scenes
-			- Manages/Stores Progress of player
+	Quests:				(MUST HAVE)
+		Quest Manager: 
+			- Quest Type: Extermination, Extraction, Exorcism, Crafting Order
+			- Quest Giver (Random/Minor/Major NPC)
+			- Quest Catalogue (HashMap)
+			- Quest Progression Tracker
+			- Main Quest, Side Quest, Random Quest (Pokémon MD Job style)
+			- Questline Catalogue
+			- Quest Rewards (Item, Currency, EXP, Relationship points)
+			- Quest Difficulty
