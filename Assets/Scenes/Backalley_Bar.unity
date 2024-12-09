@@ -508,6 +508,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4857823273361341754, guid: 265453f4bbe43124a9010ddd12b5b3fb, type: 3}
+      propertyPath: m_Radius
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 4900794501022281543, guid: 265453f4bbe43124a9010ddd12b5b3fb, type: 3}
       propertyPath: m_Name
       value: TestPlayer
@@ -548,6 +552,10 @@ PrefabInstance:
     - target: {fileID: 4799799105817089854, guid: 82db6ff814408984bb3309b0a80fa9d5, type: 3}
       propertyPath: m_Constraints
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8195329554463906874, guid: 82db6ff814408984bb3309b0a80fa9d5, type: 3}
+      propertyPath: m_Radius
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8195329554463906874, guid: 82db6ff814408984bb3309b0a80fa9d5, type: 3}
       propertyPath: m_IsTrigger
