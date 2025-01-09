@@ -64,7 +64,7 @@ public class Player_Controller : MonoBehaviour
     {
         if (rb != null)
         {
-            rb.velocity = movementInput * moveSpeed;
+            rb.linearVelocity = movementInput * moveSpeed;
         }
         else
         {
